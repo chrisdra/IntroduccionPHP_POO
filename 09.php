@@ -4,7 +4,7 @@
 $db = new mysqli('localhost', 'root', 'root', 'bienes_raices');
 
 //Creamos el quey
-$query = "SELECT titulo FROM propiedades";
+$query = "SELECT titulo, imagen FROM propiedades";
 
 //Lo preparamos
 $stmt = $db->prepare($query);
